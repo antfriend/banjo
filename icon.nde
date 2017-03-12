@@ -1,35 +1,57 @@
-link=icon.xls,Title,Image
+link=icon.xls,Title,Image,Emoji,Message
 [happycardsiz]=2.89,3.47
-[biggercardsiz]=3.5,4.95
+[biggercardsiz]=6.35,8.89
 
 [all]="1-24"
 [fronts]="1-12"
 [backs]="13-24"
-[back]=#FF0000#FFFF00#55FF55
+[back]=#000000#000000#000000
 [front]=#000000#00FF00#CCCCCC
+[haze]=#668866#556655#ccff66
 [nicey]=#2233dd#0044cc#5511bb
 [box_back]=#223377
-[box_border]=#FFcc00
+[box_border]=#000000
 [white]=#FDFDFD
 
 cards=24
 CARDSIZE=[biggercardsiz]
 PAGE=19,24,PORTRAIT,HV
-BORDER=ROUNDED,[box_border],0.02
+BORDER=ROUNDED,[box_border],0.03
 
+rectangle=[fronts],0,0,100%,100%,#000000
 rectangle=[fronts],0,0,100%,100%,[nicey]
 rectangle=[backs],0,0,100%,100%,[nicey]
 
-image=[fronts],[image],1%,1%,99%,99%,0,PN
+image=[fronts],[image],-3%,2%,99%,99%,0,PN
 
-font="Arial",11,TB,#ffFF00
-text=[fronts],[title],0,0,100%,10%,center,center,0,90,0.1
-font="Arial",11,TB,#000000
+font="Courier",14,TB,#FFFFFF
+text=[fronts],[title],.02,0,100%,10%,center,center
+font="Courier",14,TB,#000000
 text=[fronts],[title],0,0,100%,10%,center,center
 
+font="Arial",34,TB,[haze]
+text=[fronts],[emoji],0,-14%,100%,100%,center,center,87,90,0.5
+font="Arial",34,TB,#556655
+text=[fronts],[emoji],0,-14%,100%,100%,center,center,88,90,0.3
+font="Arial",34,TB,#000000
+text=[fronts],[emoji],0,-14%,100%,100%,center,center,89,90,0.2
+font="Arial",34,TB,#000000
+text=[fronts],[emoji],0,-14%,100%,100%,center,center,90,85,0.2
+font="Arial",34,TB,#ffffff
+text=[fronts],[emoji],0,-14%,100%,100%,center,center,91,85,0.05
+
+font="Consolas",5,TB,#000000
+text=[fronts],[message],18%,68%,56%,18%,left,wordwrap,-2
+
+
+
 font="Arial",72,TB,#ff0000
-text=[backs],"?",0,0,100%,100%,center,center,0,90,0.6
+text=[backs],":)",0,0,100%,100%,center,center,0,90,0.6
 font="Arial",72,TB,#ffFF00
-text=[backs],"?",0,0,100%,100%,center,center,0,90,0.4
+text=[backs],":)",0,0,100%,100%,center,center,0,90,0.4
 font="Arial",72,TB,#000000
-text=[backs],"?",0,0,100%,100%,center,center
+text=[backs],":)",0,0,100%,100%,center,center,2,90,0.2
+font="Arial",72,TB,#000000
+text=[backs],":)",0,0,100%,100%,center,center,3,85,0.2
+font="Arial",72,TB,#ffffff
+text=[backs],":)",0,0,100%,100%,center,center,3,85,0.05
