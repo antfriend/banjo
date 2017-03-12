@@ -15,43 +15,55 @@ link=icon.xls,Title,Image,Emoji,Message
 
 cards=24
 CARDSIZE=[biggercardsiz]
-PAGE=19,24,PORTRAIT,HV
+PAGE=21.59,27.94,LANDSCAPE,HV
 BORDER=ROUNDED,[box_border],0.03
 
+
 rectangle=[fronts],0,0,100%,100%,#000000
-rectangle=[fronts],0,0,100%,100%,[nicey]
+image=[fronts],"Static-Electricity.png",0,0,99%,99%,0
 rectangle=[backs],0,0,100%,100%,[nicey]
 
-image=[fronts],[image],-3%,2%,99%,99%,0,PN
+image=[fronts],[image],-2%,2%,99%,99%,1,PN
 
-font="Courier",14,TB,#FFFFFF
-text=[fronts],[title],.02,0,100%,10%,center,center
-font="Courier",14,TB,#000000
-text=[fronts],[title],0,0,100%,10%,center,center
+font="terminal",20,TB,#000000
+text=[fronts],[title],.02,.03,100%,10%,center,center
+font="terminal",20,TB,#DDDDDD
+text=[fronts],[title],0,.01,100%,10%,center,center
 
 font="Arial",34,TB,[haze]
-text=[fronts],[emoji],0,-14%,100%,100%,center,center,87,90,0.5
+text=[fronts],[emoji],0,-12%,100%,100%,center,center,90,90,0.6
 font="Arial",34,TB,#556655
-text=[fronts],[emoji],0,-14%,100%,100%,center,center,88,90,0.3
+text=[fronts],[emoji],0,-12%,100%,100%,center,center,90,90,0.3
 font="Arial",34,TB,#000000
-text=[fronts],[emoji],0,-14%,100%,100%,center,center,89,90,0.2
+text=[fronts],[emoji],0,-12%,100%,100%,center,center,90,90,0.2
 font="Arial",34,TB,#000000
-text=[fronts],[emoji],0,-14%,100%,100%,center,center,90,85,0.2
+text=[fronts],[emoji],0,-13%,100%,100%,center,center,90,85,0.2
 font="Arial",34,TB,#ffffff
-text=[fronts],[emoji],0,-14%,100%,100%,center,center,91,85,0.05
+text=[fronts],[emoji],0,-12%,100%,100%,center,center,90,85,0.05
 
-font="Consolas",5,TB,#000000
-text=[fronts],[message],18%,68%,56%,18%,left,wordwrap,-2
+font="terminal",9,TB,#000000
+text=[fronts],[message],19%,69%,60%,15%,left,wordwrap,0
+font="terminal",9,TB,#FFFFFF
+text=[fronts],[message],18%,69%,60%,15%,left,wordwrap,0
+
+image=[backs],"static.jpg",0,0,100%,100%,0
+
+font="Arial",42,TB,#000000
+text=[backs],"icon",45%,64%,50%,50%,center,center
 
 
 
-font="Arial",72,TB,#ff0000
-text=[backs],":)",0,0,100%,100%,center,center,0,90,0.6
-font="Arial",72,TB,#ffFF00
-text=[backs],":)",0,0,100%,100%,center,center,0,90,0.4
-font="Arial",72,TB,#000000
-text=[backs],":)",0,0,100%,100%,center,center,2,90,0.2
-font="Arial",72,TB,#000000
-text=[backs],":)",0,0,100%,100%,center,center,3,85,0.2
-font="Arial",72,TB,#ffffff
-text=[backs],":)",0,0,100%,100%,center,center,3,85,0.05
+image=[backs],"key.png",.55%,3%,99%,99%,0,PN
+[txt]="(ö)"
+font="Arial",74,TB,[haze]
+text=[backs],[txt],0,0,100%,100%,center,center,0,90,0.8
+font="Arial",74,TB,#556655
+text=[backs],[txt],0,0,100%,100%,center,center,0,90,0.4
+font="Arial",74,TB,#000000
+text=[backs],[txt],0,0,100%,100%,center,center,2,90,0.5
+font="Arial",74,TB,#000000
+text=[backs],[txt],0,0,100%,100%,center,center,3,85,0.2
+font="Arial",74,TB,#ccddcc
+text=[backs],[txt],0,0,100%,100%,center,center,3,85,0.05
+
+
