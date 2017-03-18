@@ -18,44 +18,50 @@ CARDSIZE=[biggercardsiz]
 PAGE=21.59,27.94,LANDSCAPE,HV
 BORDER=ROUNDED,[box_border],0.03
 
+#front_background
+rectangle=[fronts],0,0,100%,100%,#00FF00
+image=[fronts],"Static-Electricity.png",0,0,100%,100%,0,X,20,3.5,5
 
-rectangle=[fronts],0,0,100%,100%,#000000
-image=[fronts],"Static-Electricity.png",0,0,99%,99%,0
-rectangle=[backs],0,0,100%,100%,[nicey]
-
+#entertainment_center
 image=[fronts],[image],-1%,9%,100%,100%,1.3,PN
 
+#title
+roundrect=[fronts],0.1,0.15,97%,18%,#cc3300#FF9900@170,#371122#009900@270,0.3,9,2
 font="terminal",20,TB,#000000
-text=[fronts],[title],.02,0.3,100%,10%,center,center
+text=[fronts],[title],.05,0.5,100%,10%,center,center
 font="terminal",20,TB,#DDDDDD
-text=[fronts],[title],0,.4,100%,10%,center,center
+text=[fronts],[title],0,0.55,100%,10%,center,center
 
+#emoji
 [iconfontsize]=60
 font="Arial",[iconfontsize],TB,[haze]
-text=[fronts],[emoji],1%,-12%,100%,100%,center,center,90,90,0.6
+text=[fronts],[emoji],3.5%,-6%,100%,100%,center,center,90,90,0.6
 font="Arial",[iconfontsize],TB,#556655
-text=[fronts],[emoji],1%,-12%,100%,100%,center,center,90,90,0.3
+text=[fronts],[emoji],3.5%,-6%,100%,100%,center,center,90,90,0.3
 font="Arial",[iconfontsize],TB,#000000
-text=[fronts],[emoji],1%,-12%,100%,100%,center,center,90,90,0.2
+text=[fronts],[emoji],3.5%,-6%,100%,100%,center,center,90,90,0.2
 font="Arial",[iconfontsize],TB,#000000
-text=[fronts],[emoji],1%,-13%,100%,100%,center,center,90,85,0.2
+text=[fronts],[emoji],3.5%,-5%,100%,100%,center,center,90,85,0.2
 font="Arial",[iconfontsize],TB,#ffffff
-text=[fronts],[emoji],1%,-12%,100%,100%,center,center,90,85,0.05
+text=[fronts],[emoji],3.5%,-6%,100%,100%,center,center,90,85,0.05
 
 #message
-rectangle=[backs],0,0,100%,100%,[nicey]
+#rectangle=[fronts],16%,75%,64.5%,17%,#000000
+#rectangle=[fronts],17%,76%,62.5%,16%,[haze]
+image=[fronts],"static.jpg",17.5%,76%,62.5%,15.5%, 0, , 40
 font="arial",9,TB,#000000
-text=[fronts],[message],19%,75.8%,60%,15%,left,wordwrap,0
+text=[fronts],[message],19%,76.2%,60%,15%,left,wordwrap,0
 font="arial",9,TB,#FFFFFF
-text=[fronts],[message],18.7%,75.6%,60%,15%,left,wordwrap,0
+text=[fronts],[message],18.7%,75.8%,60%,15%,left,wordwrap,0
 
 #backs
+#back_border
+rectangle=[backs],0,0,100%,100%,[nicey]
+
 image=[backs],"static.jpg",0,0,100%,100%,0
 
 font="Arial",42,TB,#000000
 text=[backs],"icon",45%,64%,50%,50%,center,center
-
-
 
 image=[backs],"key.png",.55%,3%,99%,99%,0,PN
 [txt]="(ö)"
