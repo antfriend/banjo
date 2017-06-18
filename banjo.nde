@@ -1,5 +1,6 @@
-link=banjo.xls,Title,emoticolor,Emoji,Message,binary
-[happycardsiz]=6.2992,8.7884
+link=banjo.xls,Title,emoticolor,Emoji,Message,Action,binary
+[happycardsiz]=6.3,8.8
+
 [biggercardsiz]=6.35,8.89
 
 [all]="1-13"
@@ -45,7 +46,7 @@ text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.3
 font="Arial",[iconfontsize],TB,#005500
 text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.2
 font="Arial",[iconfontsize],TB,#000000
-text=[fronts],[emoji],[fronticonfontx],-4%,100%,100%,center,center,90,85,0.2
+text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.2
 font="Arial",[iconfontsize],TB,#ffffff
 text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.05
 
@@ -55,9 +56,16 @@ image=[fronts],"lens.png", 1.11, 2, 4, 4, 10, PN, 40
 '#message
 image=[fronts],"static.jpg",17.5%,76%,62.5%,15.5%, 0, , 30
 font="arial",10,TB,#000000
-text=[fronts],[message],19%,76.2%,60%,15%,left,wordwrap,0
+text=[fronts],[message],19%,75.2%,60%,15%,left,wordwrap,0
 font="arial",10,TB,#FFFFFF
-text=[fronts],[message],18.7%,75.8%,60%,15%,left,wordwrap,0
+text=[fronts],[message],18.6%,75.8%,60%,15%,left,wordwrap,0
+
+'#action
+font="arial",10,TB,#000000
+text=[fronts],[action],19%,80.2%,60%,15%,left,wordwrap,0
+font="arial",10,TB,#FFFFFF
+text=[fronts],[action],18.6%,80.8%,60%,15%,left,wordwrap,0
+
 
 '#ELLIPSE = [fronts], 2.3, 3, 0.5, 0.3, #FFFFFF, [haze], 0.5
 font="arial",30,TB,#FFFFFF
