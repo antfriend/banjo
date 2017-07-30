@@ -1,6 +1,5 @@
 link=banjo.xls,Title,emoticolor,Emoji,Message,Action,binary
 [happycardsiz]=8.16,11.1
-
 [biggercardsiz]=6.35,8.89
 
 [all]="1-13"
@@ -17,7 +16,7 @@ link=banjo.xls,Title,emoticolor,Emoji,Message,Action,binary
 cards=13
 CARDSIZE=[happycardsiz]
 PAGE=21.59,27.94,LANDSCAPE,HV
-BORDER=ROUNDED,[box_border],0.1
+BORDER=ROUNDED,[box_border],0.2
 
 'front_background
 rectangle=[fronts],0,0,100%,100%,[emoticolor]
@@ -50,7 +49,7 @@ text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.2
 font="Arial",[iconfontsize],TB,#ffffff
 text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.05
 
-image=[fronts],"lens.png", 1.11, 2, 4, 4, 10, PN, 40
+image=[fronts],"lens.png", 1.5, 2.5, 5.3, 5.3, 10, PN, 40
 '#image=[fronts],"lens.png", 2, 2.9, 0.6, 1.1, 160, GT, 30
 
 '#message
@@ -69,7 +68,7 @@ text=[fronts],[action],18.6%,80.8%,60%,15%,left,wordwrap,0
 
 '#ELLIPSE = [fronts], 2.3, 3, 0.5, 0.3, #FFFFFF, [haze], 0.5
 font="arial",30,TB,#FFFFFF
-text=[fronts], "*", 2.1, 3, 2, 1, left, wordwrap, 20, 55, 0.55
+text=[fronts], "*", 2.7, 3.7, 2, 1, left, wordwrap, 20, 55, 0.55
 
 '#backs
 '#back_border
@@ -79,26 +78,25 @@ roundrect=[backs],0,0,99%,99%,[haze]@15,EMPTY,1.3,5,0
 roundrect=[backs],.1,.1,98%,98%,#FF9900,EMPTY, 1.4, 6
 image=[backs],"static.jpg",0,0,100%,100%,0,X,90@95
 
-font="Arial",42,TB,#000000
+font="Arial",52,TB,#000000
 text=[backs]," ",45%,64%,50%,50%,center,center
 
 image=[backs],"key.png",.55%,3%,99%,99%,0,PN
-[backfontsize]=140
-[backfonty]=-1.24
+[backfontsize]=180
+[backfonty]=-1.6
 [txt]="..."
 font="Arial",[backfontsize],TB,[haze]
-text=[backs],[txt],0,[backfonty],100%,100%,center,center,0,90,0.7
+text=[backs],[txt],0,[backfonty],100%,100%,center,center,0,90,0.9
 font="Arial",[backfontsize],TB,#000000
 text=[backs],[txt],0,[backfonty],100%,100%,center,center,0,90,0.4
 font="Arial",[backfontsize],TB,#ccddcc
 text=[backs],[txt],0,[backfonty],100%,100%,center,center,0,85,0.05
 
-image=[backs],"lens.png", 0.23, 1.75, 5.7, 5.7, 20, PN, 50
-font="arial",30,TB,#FFFFFF
-text=[backs], "*", 2.1, 3, 2, 1, left, wordwrap, 20, 55, 0.55
+image=[backs],"lens.png", 0.7, 2.4, 6.6, 6.9, 10, PN, 40
 
-ELLIPSE = [backs], 0.2, 1.7, 5.89, 5.89, #000000, EMPTY, 0.19
-
+ELLIPSE = [backs], 0.3, 2.1, 7.5, 7.4, #000000, EMPTY, 0.19
+font="arial",40,TB,#FFFFFF
+text=[backs], "*", 2.5, 3.7, 2, 1, left, wordwrap, 20, 55, 0.55
 
 'PRINT=DUPLEX
 'DUPLEX = 1-12,13, 4
