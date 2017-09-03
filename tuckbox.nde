@@ -10,7 +10,7 @@
 [white]=#FDFDFD
 
 [img1]="cards\banjo_13.png"
-[img2]="cards\banjo_01.png"
+[img2]="banjo_01.png"
 [box_border]=#FFcc00
 
 [wid]=6.5
@@ -28,7 +28,7 @@
 [fla]=[dep]/2
 [ide]=[fla]/2
 [col1]=#000000
-[col2]=EMPTY
+[col2]=#FF9900@170
 [thi]=0.1
 'Uncomment the following line for A4 paper
 'PAGE=21,29.7,PORTRAIT,HV
@@ -37,14 +37,6 @@ PAGE=21.59,27.94,PORTRAIT,HV
 BORDER=NONE
 CARDSIZE=[fla]+[dep]+[hei]+[dep]+[fla],[dep]+[wid]+[dep]+[wid]+[fla]
 
-IF=[img1]=none
-ELSE
- IMAGE=1,[img1],[fla]+[dep],[dep],[hei],[wid],90,P
-ENDIF
-IF=[img2]=none
-ELSE
-IMAGE=1,[img2],[fla]+[dep],[dep]+[wid]+[dep],[hei],[wid],90,P
-ENDIF
 
 
 RECTANGLE=1,[fla]+[dep] ,0 ,[hei],[dep],[col1],[col2],[thi]
@@ -53,6 +45,28 @@ RECTANGLE=1,[fla]+[dep] ,[dep] ,[hei],[wid],[col1],[col2],[thi]
 RECTANGLE=1,[fla]+[dep]+[hei],[dep] ,[dep],[wid],[col1],[col2],[thi]
 RECTANGLE=1,[fla]+[dep] ,[dep]+[wid] ,[hei],[dep],[col1],[col2],[thi]
 RECTANGLE=1,[fla]+[dep] ,[dep]+[wid]+[dep],[hei],[wid],[col1],[col2],[thi]
+
+'title
+roundrect=1,2.2,0.0,8.9,1.5,#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
+font="terminal",20,TB,#000000
+text=1,"banjo (-(-_(-_-)",0,-0.1,100%,11%,center,center
+font="terminal",20,TB,#DDDDDD
+text=1,"banjo (-(-_(-_-)",0,-0.15,100%,11%,center,center
+font="terminal",10,TB,#DDDDDD
+text=1,"1000",-3.2,1.66,100%,10%,center,center
+
+'url
+roundrect=1,2.2,8.1,8.9,1.5,#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
+font="terminal",10,TB,#000000
+text=1,"antfriend.github.io/banjo",0.05,8,100%,11%,center,center
+font="terminal",10,TB,#DDDDDD
+text=1,"antfriend.github.io/banjo",0,8,100%,11%,center,center
+font="terminal",10,TB,#DDDDDD
+text=1,"1000",-3.2,1.66,100%,10%,center,center
+
+IMAGE=1,[img1],[fla]+[dep],[dep],[hei],[wid],90,P
+IMAGE=1,[img2],[fla]+[dep],[dep]+[wid]+[dep],[hei],[wid],90,P
+
 LINE=1,[fla]+[dep] ,0 ,[fla]+[dep]-[fla],[ide] ,[col1],[thi]
 LINE=1,[fla]+[dep]-[fla],[ide] ,[fla]+[dep]-[fla],[dep]-[ide],[col1],[thi]
 LINE=1,[fla]+[dep]-[fla],[dep]-[ide],[fla]+[dep] ,[dep] ,[col1],[thi]
@@ -79,11 +93,4 @@ LINE=1,[fla]+[dep]+[hei]-[ide],[dep]+[wid]+[dep]+[wid]+[fla],[fla]+[dep]+[hei],
 
 LINE=1,[fla]+[dep]+[hei]-[fla],[dep],[fla]+[dep]+[hei]-[fla],[dep]+[wid],[col1],[thi],DSS
 
-'title
-roundrect=1,2.2,0.0,8.9,1.5,#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
-font="terminal",20,TB,#000000
-text=1,"banjo ::",-1.95,-0.1,100%,11%,center,center
-font="terminal",20,TB,#DDDDDD
-text=1,"banjo ::",-1.9,-0.15,100%,11%,center,center
-font="terminal",10,TB,#DDDDDD
-text=1,"1000",-3.2,1.66,100%,10%,center,center
+
