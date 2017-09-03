@@ -29,14 +29,14 @@ image=[fronts],"crt.png",2%,10%,95%,95%,1.3,PN
 'title
 roundrect=[fronts],0.3,0.35,7.5,1.8,#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
 font="terminal",20,TB,#000000
-text=[fronts],[title],0.05,0.7,100%,11%,center,center
+text=[fronts],[title],0.05,0.6,100%,11%,center,center
 font="terminal",20,TB,#DDDDDD
-text=[fronts],[title],0,0.75,100%,11%,center,center
+text=[fronts],[title],0,0.65,100%,11%,center,center
 font="terminal",10,TB,#DDDDDD
 text=[fronts],[binary],-2.3,1.65,100%,10%,center,center
 
 'emoji
-[iconfontsize]=45
+[iconfontsize]=53
 [fronticonfontx]=1.6%
 font="Arial",[iconfontsize],TB,[haze]
 text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.6
@@ -45,33 +45,37 @@ text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.3
 font="Arial",[iconfontsize],TB,#005500
 text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.2
 
-image=[fronts],"lens.png", 1.5, 2.5, 5.3, 5.3, 10, PN, 40
-
-font="Arial",[iconfontsize],TB,#000000
-text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.2
 font="Arial",[iconfontsize],TB,#ffffff
 text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.05
 
+'image=[fronts],"lens.png", 1.5, 2.5, 5.3, 5.3, 10, PN, 40
 
-'#image=[fronts],"lens.png", 2, 2.9, 0.6, 1.1, 160, GT, 30
+font="Arial",[iconfontsize],TB,#000000
+text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.2
+
+font="Arial",[iconfontsize],TB,#ffffff
+text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.05
+image=[fronts],"lens.png", 1.5, 2.5, 5.3, 5.3, 10, PN, 40
+
+image=[fronts],"coinslot.png", 19%, 23%, 5%, 5%, -1, GT, 90
 
 '#message
 image=[fronts],"static.jpg",19.5%,74%,59.5%,15.2%, 0, , 20
 font="arial",10,TB,#000000
-text=[fronts],[message],1.8,8.2,60%,16%,left,wordwrap,0
+text=[fronts],[message],1.8,8.22,55%,16%,left,wordwrap,0
 font="arial",10,TB,#FFFFFF
-text=[fronts],[message],1.85,8.25,60%,16%,left,wordwrap,0
+text=[fronts],[message],1.75,8.27,55%,16%,left,wordwrap,0
 
 '#action
 font="arial",10,TB,#000000
-text=[fronts],[action],1.8,9,60%,15%,left,wordwrap,0
+text=[fronts],[action],1.9,8.9,55%,15%,left,wordwrap,0
 font="arial",10,TB,#FFFFFF
-text=[fronts],[action],1.85,9.05,60%,15%,left,wordwrap,0
+text=[fronts],[action],1.85,8.95,55%,15%,left,wordwrap,0
 
 
 '#ELLIPSE = [fronts], 2.3, 3, 0.5, 0.3, #FFFFFF, [haze], 0.5
 font="arial",30,TB,#FFFFFF
-text=[fronts], "*", 2.7, 3.7, 2, 1, left, wordwrap, 20, 55, 0.55
+text=[fronts], "*", 2.9, 3.8, 2, 1, left, wordwrap, 20, 55, 0.55
 
 
 '#######################################################
