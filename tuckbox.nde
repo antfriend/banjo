@@ -1,12 +1,30 @@
-[img1]=clans.png
-[img2]=julie2.jpg
+
+[happycardsiz]=8.16,11.1
+
+[back]=#000000#000000#000000
+[front]=#000000#00FF00#CCCCCC
+[haze]=#668866#556655#ccff66
+[nicey]=#2233dd#0044cc#5511bb
+[box_back]=#223377
+[box_border]=#000000
+[white]=#FDFDFD
+
+[img1]="cards\banjo_13.png"
+[img2]="cards\banjo_01.png"
 [box_border]=#FFcc00
-INPUTTEXT="wid","Width (cm)","6"
-INPUTTEXT="hei","Height (cm)","9"
-INPUTTEXT="dep","Depth (cm)","3"
-INPUTCHOICE="extra","Add extra lines","Yes","Yes|No"
-INPUTTEXT="img1","Box image (front)","",G
-INPUTTEXT="img2","Box image (rear)","",G
+
+[wid]=6
+[hei]=9
+[dep]=3
+[extra]=No
+
+'INPUTTEXT="wid","Width (cm)","6"
+'INPUTTEXT="hei","Height (cm)","9"
+'INPUTTEXT="dep","Depth (cm)","3"
+'INPUTCHOICE="extra","Add extra lines","Yes","Yes|No"
+'INPUTTEXT="img1","Box image (front)","",G
+'INPUTTEXT="img2","Box image (rear)","",G
+
 [fla]=[dep]/2
 [ide]=[fla]/2
 [col1]=#000000
@@ -27,6 +45,8 @@ IF=[img2]=none
 ELSE
 IMAGE=1,[img2],[fla]+[dep],[dep]+[wid]+[dep],[hei],[wid],90,P
 ENDIF
+
+
 
 RECTANGLE=1,[fla]+[dep] ,0 ,[hei],[dep],[col1],[col2],[thi]
 RECTANGLE=1,[fla] ,[dep] ,[dep],[wid],[col1],[col2],[thi]
@@ -58,13 +78,13 @@ LINE=1,[fla]+[dep]+[ide],[dep]+[wid]+[dep]+[wid]+[fla],[fla]+[dep]+[hei]-[ide],
 LINE=1,[fla]+[dep]+[hei]-[ide],[dep]+[wid]+[dep]+[wid]+[fla],[fla]+[dep]+[hei],
 [dep]+[wid]+[dep]+[wid],[col1],[thi]
 
-IF=[extra]=Yes
  LINE=1,[fla]+[dep]+[hei]-[fla],[dep],[fla]+[dep]+[hei]-[fla],[dep]+[wid],[col1],[thi],DSS
- {
- BEZIER=1,
- [fla]+[dep]+[hei],[dep]+[wid]+[dep]+[wid]/2-[ide],
- [fla]+[dep]+[hei]-[ide],[dep]+[wid]+[dep]+[wid]/2-[ide],
- [fla]+[dep]+[hei]-[ide],[dep]+[wid]+[dep]+[wid]/2+[ide],
- [fla]+[dep]+[hei],[dep]+[wid]+[dep]+[wid]/2+[ide],
- [col1],[thi]}
-ENDIF
+
+'title
+roundrect=1,5.3,0.35,7.5,1.8,#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
+font="terminal",20,TB,#000000
+text=1,"banjo",0.05,0.7,100%,11%,center,center
+font="terminal",20,TB,#DDDDDD
+text=1,"banjo",0,0.75,100%,11%,center,center
+font="terminal",10,TB,#DDDDDD
+text=1,"0101",-2.3,1.65,100%,10%,center,center
