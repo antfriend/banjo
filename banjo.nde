@@ -1,4 +1,4 @@
-link=banjo.xls,Title,emoticolor,Emoji,Message,Action,binary
+link=banjo.xls,Title,emoticolor,haze,Emoji,Message,Action,binary
 [happycardsiz]=8.16,11.1
 [biggercardsiz]=6.35,8.89
 
@@ -7,7 +7,7 @@ link=banjo.xls,Title,emoticolor,Emoji,Message,Action,binary
 [backs]="13"
 [back]=#000000#000000#000000
 [front]=#000000#00FF00#CCCCCC
-[haze]=#668866#556655#ccff66
+
 [nicey]=#2233dd#0044cc#5511bb
 [box_back]=#223377
 [box_border]=#000000
@@ -40,24 +40,19 @@ text=[fronts],[binary],-2.3,1.65,100%,10%,center,center
 [fronticonfontx]=1.6%
 font="Arial",[iconfontsize],TB,[haze]
 text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.6
-font="Arial",[iconfontsize],TB,#556655
-text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.3
-font="Arial",[iconfontsize],TB,#005500
-text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.2
-
-font="Arial",[iconfontsize],TB,#ffffff
-text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.05
-
-'image=[fronts],"lens.png", 1.5, 2.5, 5.3, 5.3, 10, PN, 40
-
 font="Arial",[iconfontsize],TB,#000000
-text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.2
-
-font="Arial",[iconfontsize],TB,#ffffff
-text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.05
+text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.3
+'font="Arial",[iconfontsize],TB,#005500
+'text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.2
+'font="Arial",[iconfontsize],TB,#ffffff
+'text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.05
+'font="Arial",[iconfontsize],TB,#000000
+'text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,85,0.2
+font="Arial",[iconfontsize],T,[emoticolor]
+text=[fronts],[emoji],[fronticonfontx],-5%,100%,100%,center,center,90,90,0.12
 image=[fronts],"lens.png", 1.5, 2.5, 5.3, 5.3, 10, PN, 40
 
-image=[fronts],"coinslot.png", 19%, 23%, 5%, 5%, -1, GT, 90
+image=[fronts],"coinslot.png", 79%, 23%, 5%, 5%, 2, GT, 90
 
 '#message
 image=[fronts],"static.jpg",19.5%,74%,59.5%,15.2%, 0, , 20

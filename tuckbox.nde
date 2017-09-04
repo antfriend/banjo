@@ -14,9 +14,9 @@
 [box_border]=#FFcc00
 
 [wid]=6.5
-[hei]=8.7
-[dep]=1.6
-[extra]=No
+[hei]=9.1
+[dep]=1.8
+[extra]=Yes
 
 'INPUTTEXT="wid","Width (cm)","6"
 'INPUTTEXT="hei","Height (cm)","9"
@@ -38,7 +38,6 @@ BORDER=NONE
 CARDSIZE=[fla]+[dep]+[hei]+[dep]+[fla],[dep]+[wid]+[dep]+[wid]+[fla]
 
 
-
 RECTANGLE=1,[fla]+[dep] ,0 ,[hei],[dep],[col1],[col2],[thi]
 RECTANGLE=1,[fla] ,[dep] ,[dep],[wid],[col1],[col2],[thi]
 RECTANGLE=1,[fla]+[dep] ,[dep] ,[hei],[wid],[col1],[col2],[thi]
@@ -47,20 +46,20 @@ RECTANGLE=1,[fla]+[dep] ,[dep]+[wid] ,[hei],[dep],[col1],[col2],[thi]
 RECTANGLE=1,[fla]+[dep] ,[dep]+[wid]+[dep],[hei],[wid],[col1],[col2],[thi]
 
 'title
-roundrect=1,2.2,0.0,8.9,1.5,#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
+roundrect=1,[fla]+[dep],0.0,9,[dep],#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
 font="terminal",20,TB,#000000
-text=1,"banjo (-(-_(-_-)",0,-0.1,100%,11%,center,center
+text=1,"banjo (-(-_(-_-)",0,0,100%,11%,center,center
 font="terminal",20,TB,#DDDDDD
 text=1,"banjo (-(-_(-_-)",0,-0.15,100%,11%,center,center
 font="terminal",10,TB,#DDDDDD
 text=1,"1000",-3.2,1.66,100%,10%,center,center
 
 'url
-roundrect=1,2.2,8.1,8.9,1.5,#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
+roundrect=1,[fla]+[dep],[dep]+[wid],9,[dep],#cc3300#FF9900@170,#000#00FF00@270,0.4,8,2
 font="terminal",10,TB,#000000
-text=1,"antfriend.github.io/banjo",0.05,8,100%,11%,center,center
+text=1,"antfriend.github.io/banjo",0,8.3,100%,11%,center,center
 font="terminal",10,TB,#DDDDDD
-text=1,"antfriend.github.io/banjo",0,8,100%,11%,center,center
+text=1,"antfriend.github.io/banjo",0,8.2,100%,11%,center,center
 font="terminal",10,TB,#DDDDDD
 text=1,"1000",-3.2,1.66,100%,10%,center,center
 
