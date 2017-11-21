@@ -113,11 +113,12 @@ text=[info],"howto banjo",0.03,1.1,100%,11%,center,center
 font="terminal",20,TB,#DDDDDD
 text=[info],"howto banjo",0,1.13,100%,11%,center,center
 font="terminal",10,TB,#DDDDDD
-text=[info],"ooi,-2.3,2.05,100%,10%,center,center
+text=[info],"on your turn",0%,2.05,100%,10%,center,center
 
-font="terminal",10,TB,#000
-TEXT=[info],"this is how you play one step",10%,26%,90%,80%,LEFT,wordwrap
+font="Arial",10,TB,#000
+TEXT=[info],"(1) draw the top card from the draw pile OR draw the top card from one of your own 3 piles, OR draw any piano that is a face-up, top card, anywhere.",10%,26%,80%,80%,LEFT,wordwrap
+text=[info],"(2) play that card by placing it on the discard pile, OR on one of your own piles, OR on any pile of any other player.",10%,42%,80%,80%,LEFT,wordwrap
+text=[info],"(3) If the card has an action on it,",10%,58.5%,80%,80%,LEFT,wordwrap
 
 'PRINT=DUPLEX
 'DUPLEX = 1-12,13, 4
-
